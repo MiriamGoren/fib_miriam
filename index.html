@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ITC Template</title>
+  <meta name="description" content="Project Name">
+  <meta name="author" content="Fill in your name">
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="container">
+  <form class="container-fluid ">
+  <H1 class="h1 Header">Fibonacci Calculater
+  </H1>
+<p class="align-baseline paragraph">The Fibonacci of <input id="num" type="number"class="form-control input-sm inputbox" placeholder= "#" >
+   <button id="myBtn" type="button" class="btn btn-primary btn-sm align-top button" onclick="resetFunction()">is
+   </button>
+   <u id="result" class="result pl-1 ml-4 d-inline-block"></u>
+    <span   id="Loader" class="spinner-border d-none" role="status"></span>
+    <span id="alert" class="alert alert-danger text-decoration-none small text-justify d-inline-flex p-1" style="font-size: small; visibility: hidden;">Can't be larger than 50</span>
+</p>
+<input type="checkbox" id="myCheck">Use server</input>
+</form>
+<div class="container-fluid ">
+  <h2  class="mt-5" >Results</h2>
+  <ul id="resultsList" class="list-unstyled list-group list-group-flush d-inline-block w-auto"></ul>
+</div>
+</body>
+<script src="./js/scripts.js"></script>
+</html>
+
+<!--justify-space-between  Alighn items center margins in css and width in css-->

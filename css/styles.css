@@ -1,0 +1,54 @@
+.Header{
+    margin-top: 85px;
+    margin-bottom: 35px;
+    font-size: 72px;
+    font-weight: 400;
+    color: #373A3C;
+}   
+.paragraph{
+    font-size: 24px;
+    color: #373A3C;
+}
+
+.inputbox{
+    width:5rem;
+    height: 2rem;;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+::placeholder {
+    color: #999999;
+  }
+
+.container{
+    align-items: flex-start;
+    justify-self: start;
+    margin-left:100px;
+}
+
+.button{
+    width: 31px;
+    height: 31px;
+    align-self: center;
+    margin-top: 6px;
+
+}
+
+.
+
+/* .loader {
+    /* display: none; */
+ /* top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);*/
+  /* } */ 
+
+/* .result{
+    margin-left: 0.4rem;
+    font-size: 20px;
+    font-weight: bold;
+} */
