@@ -108,7 +108,7 @@ function noServer (number) {
     return;
   }
   else {
-    looping();
+    looping_wrapper();
   }
   
 }
