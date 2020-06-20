@@ -18,6 +18,7 @@ function alertOff() {
   alert.style.visibility = "hidden";
   let alertBox = document.getElementById("num");
   alertBox.classList.remove("text-danger", "border-danger");
+  
 }
 
 function Error42() {
@@ -32,24 +33,20 @@ function Error42() {
 
 function resetFunction() {
   var resetResult = document.getElementById("result");
-  if ((resetResult.className = "text-danger")) {
+  if ((resetResult.className == "text-danger")) {
     alertOff();
   }
   alertOff();
   var resetAlert = document.getElementById("alert");
   if (resetAlert.style.visibility === "visible") {
     resetAlert.style.visibility = "invisible";
-  } else {
-    resetAlert.style.visibility = "invisible";
-  }
+  } 
 
   var resetNum = document.getElementById("num");
   if (resetNum.style.color === "#dc3545") {
     resetNum.style.color = "#495057";
-  } else {
-    resetNum.style.color = "#495057";
   }
-  resetNum.style.color = "#495057";
+  
   
 }
 
@@ -68,7 +65,7 @@ function on_click_handler() {
   if (checkbox_is_checked) {
     fetch_data_from_server_ex5(number);
   } else {
-    fetch_data_from_server_ex4(number);
+  fetch_data_from_server_ex4(number);
   }
 }
 function fetch_data_from_server_ex4(number) {
