@@ -65,31 +65,52 @@ function on_click_handler() {
   if (checkbox_is_checked) {
     fetch_data_from_server_ex5(number);
   } else {
-  fetch_data_from_server_ex4(number);
+    noServer(number);
   }
 }
-function fetch_data_from_server_ex4(number) {
+
+function looping_wrapper()
+{
+    x = document.getElementById("num").value;
+    looping(x) 
+}
+
+function looping(x) {
+  if ( x == 0 || x == 1)
+  {
+      return 0;
+  }
+  let a = 0,
+    b = 1,
+    f = 1;
+  for (let i = 2; i <= x; i++) {
+    f = a + b;
+    a = b;
+    b = f;
+  }
+
+  document.getElementById("result").innerHTML = f;
+  return f;
+}
+function noServer (number) {
   console.log("ex4");
   Loader();
   if (number < 0)
   {
+    Error42();
     document.getElementById("result").innerHTML = "Error: number cant be smaller than 0"
     return;
   }
-  if (number == 42)
+  else if (number == 42)
   {
+    Error42();
     document.getElementById("result").innerHTML = "42 is the meaning of life"
     return;
   }
-  url = "http://127.0.0.1:5050/fibonacci/";
-  url_with_data = url + number;
-  console.log(url_with_data);
-  fetch(url_with_data)
-    .then((response) => response.json())
-    .then(
-      (response) =>
-        (document.getElementById("result").innerHTML = response["result"])
-    );
+  else {
+    looping();
+  }
+  
 }
 
 function fetch_data_from_server_ex5(number) {
