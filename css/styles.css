@@ -37,7 +37,10 @@
 
 }
 
-.
+.li{
+     border-style: none;
+     border-style: solid;
+}
 
 /* .loader {
     /* display: none; */
