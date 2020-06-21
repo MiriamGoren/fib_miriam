@@ -55,6 +55,10 @@ function on_click_handler() {
   Loader();
   document.getElementById("result").innerHTML = " "
   number = document.getElementById("num").value;
+  if (number==0 || number==1) {
+    Loader();
+    return number;
+  }
   if (number > 50) {
     Loader();
     alertOn();
@@ -78,7 +82,7 @@ function looping_wrapper()
 function looping(x) {
   if ( x == 0 || x == 1)
   {
-      return 0;
+      return x;
   }
   let a = 0,
     b = 1,
