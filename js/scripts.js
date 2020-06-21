@@ -55,10 +55,6 @@ function on_click_handler() {
   Loader();
   document.getElementById("result").innerHTML = " "
   number = document.getElementById("num").value;
-  if (number==0 || number==1) {
-    Loader();
-    return number;
-  }
   if (number > 50) {
     Loader();
     alertOn();
